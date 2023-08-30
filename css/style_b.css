@@ -1,0 +1,64 @@
+:root {
+    --page-theme: linear-gradient(90deg, #CF77F3 0%, #009BFF 47%, #2AC9DB 100%);
+}
+
+body {
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    font-family: sans-serif;
+}
+.background-blur {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80vh;
+    width: 80vw;
+    background-image: linear-gradient(90deg, #CF77F3 0%, #009BFF 47%, #2AC9DB 100%);
+    border-radius: 100px;
+    filter: blur(10vw);    
+}
+.main_content {
+    max-width: 900px;
+    height: calc(100% - 40px);
+    padding: 20px;
+    margin: auto;
+    background-color: #fff;
+    
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    margin-top: auto;
+    padding-bottom: 40px;
+    border-top: 2px solid #000;
+    
+    /* Faboulus colors */
+    /* border-width: 10px 0 0 0;
+    border-style: solid;
+    border-image: linear-gradient(90deg, #CF77F3 0%, #009BFF 47%, #2AC9DB 100%) 1; */
+}
+.team-member-cards {
+    margin-top: 20px;
+}
+h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.member-card {
+    background-color: aquamarine;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: max-content auto;
+}
+.member-card img {
+    width: 140px;
+    border-radius: 3px;
+    margin-right: 15px;
+}
