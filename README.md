@@ -1,2 +1,2 @@
 # Profilering
-Informasjo om gruppemedlemmer
+Informasjon om gruppemedlemmer
