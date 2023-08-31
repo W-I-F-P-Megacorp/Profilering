@@ -365,3 +365,6 @@ FodyWeavers.xsd
 # miscellaneous
 /database
 *.csproj.user
+
+# vscode
+*.vscode
