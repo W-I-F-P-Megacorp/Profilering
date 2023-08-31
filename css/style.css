@@ -31,16 +31,10 @@ h2 {
     flex-direction: column;
 }
 
-footer{
-    margin-top: auto;
-    padding-bottom: 40px;
-    border-top: 2px solid #fff;
-}
 .div-logo img{
     width: 100%;
     margin-bottom: 30px;
 }
-
 .team-button {
     background-color: #383838;
     padding: 20px;
@@ -51,24 +45,29 @@ footer{
 a.button {
     text-decoration: none;
 }
-a {
-    color: #ffffff;
+a, a:visited > i {
+    color:#fff;
+    text-decoration: none;
 }
 a .team-button:hover {
     background-color: #464646;
 }
 
+/* === Footer === */
 footer {
+    margin-top: auto;
+    padding-bottom: 40px;
+    border-top: 2px solid #fff;
     display:flex;
     justify-content: center;
-    padding: 0 0 0 0;
 }
-
-footer > .footer-link > a {
+.footer-link {
+    margin-top: 16px;
+}
+.footer-link a {
     text-decoration: none;
     font-style: italic;
 }
-
-footer > .footer-link > a:hover {
+.footer-link a:hover {
     text-decoration: underline;
 }
