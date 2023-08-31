@@ -5,9 +5,22 @@ body {
     margin: 0;
     height: 100vh;
     font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
+
+h1, h2, h3, h4, h5, h6, h7 {
+    font-family: 'Chivo Mono', monospace;
+    color:#FFF;
+    font-weight: 400;
+}
+
+h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 .main_content {
-    max-width: 900px;
+    max-width: 1100px;
     height: calc(100% - 40px);
     padding: 20px;
     margin: auto;
@@ -27,10 +40,7 @@ footer{
     width: 100%;
     margin-bottom: 30px;
 }
-h2 {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
+
 .team-button {
     background-color: #383838;
     padding: 20px;
@@ -46,4 +56,19 @@ a {
 }
 a .team-button:hover {
     background-color: #464646;
+}
+
+footer {
+    display:flex;
+    justify-content: center;
+    padding: 0 0 0 0;
+}
+
+footer > .footer-link > a {
+    text-decoration: none;
+    font-style: italic;
+}
+
+footer > .footer-link > a:hover {
+    text-decoration: underline;
 }
