@@ -52,6 +52,31 @@ p {
     margin: auto;
 }
 
+.groupTitle {
+    max-width: 150px;
+}
+
+
+#groupPart > .memberCard > .groupTitle {
+    display: flex;
+    flex-direction: column;
+}
+
+#groupPart > .memberCard > .groupTitle > #groupSymbol > svg {
+    color:#FFF;
+    width:100%;
+    height: 100%;
+}
+
+
+#groupPart > .memberCard > .cardText > p {
+    margin: 0;
+}
+
+#groupPart > .memberCard > .cardText > br {
+    height:2vh;
+}
+
 .memberCard {
     background-color: #a30f2d;
     border-radius: 3px;
