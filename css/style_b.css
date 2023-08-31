@@ -1,7 +1,3 @@
-:root {
-    --page-theme: linear-gradient(90deg, #CF77F3 0%, #009BFF 47%, #2AC9DB 100%);
-}
-
 body {
     background-color: #fff;
     padding: 0;
@@ -31,21 +27,41 @@ body {
     display: flex;
     flex-direction: column;
 }
-footer{
-    margin-top: auto;
-    padding-bottom: 40px;
-    border-top: 2px solid #000;
+/* === Header & Footer === */
+header {
+    border-bottom: 2px solid #000;
 }
-.team-member-cards {
-    margin-top: 10px;
-    margin-bottom: 30px;
+header h1 {
+    margin: 2vh 0 1vh 0;
+}
+header a {
+    color:#000000;
+    text-decoration: none;
+    font-style: italic;
+}
+header a:hover {
+    text-decoration: underline;
+}
+h1, h2, h3 {
+    font-family: 'Chivo Mono', monospace;
+    color:#000000;
 }
 h2 {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+footer{
+    margin-top: auto;
+    padding-bottom: 40px;
+    border-top: 2px solid #000;
+}
+
+/* === Cards === */
+.team-member-cards {
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
 .member-card-wrapper {
-    /* filter: blur(10px); */
     border-radius: 30px;
     background-color: #dddddd;
     margin-top: 20px;
@@ -54,8 +70,8 @@ h2 {
 }
 .member-card {
     background: #6DD5FA;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #6DD5FA, #f1ecf8);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #6DD5FA, #f1ecf8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to left, #6DD5FA, #efe6fc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #6DD5FA, #efe6fc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     border-radius: 30px;
     padding: 15px;
@@ -67,13 +83,15 @@ h2 {
     width: 140px;
     border-radius: 30px;
     height: 160px;
+    /* height: 100%; */
     object-fit: cover;
     background-color: #D2D2D2;
 }
-.card-info .title {
+.card-info .title .rolle{
     display: inline;
 }
 
+/* === Card-Links === */
 .links {
     font-size: 2rem;
     padding: 15px;
@@ -83,10 +101,12 @@ h2 {
     flex-direction: column;
     margin-bottom: 1rem;
 }
+.links a i {
+    width: 2rem;
+}
 .links a:hover > i {
     color:#464646;
 }
-
 a, a:visited > i {
     color:#000;
     text-decoration: none;
