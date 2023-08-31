@@ -163,9 +163,58 @@ footer > .footer-link > a:hover {
     text-decoration: underline;
 }
 
-@media (max-width: 1024px) {
+.imgWrapper {
+    
+}
+
+@media (max-width: 768px) {
     #contentContainer {
         max-width:90vw;
         margin: 0 auto;
+    }
+    
+    header {
+        max-width:90vw;
+    }
+    
+    .memberCard {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #groupPart > .memberCard > .groupTitle {
+        max-width: 100%;
+    }
+    
+    #groupSymbol, #groupTitleText {
+        margin: 0 auto;
+    }
+    
+    .groupTitle > #groupSymbol > svg {
+        max-width:10vw;
+    }
+    
+    .memberCard img {
+        width: 60%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+    
+    .imgWrapper {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .link-container {
+        margin: 0 auto;
+        width: 60%;
+        justify-content: center;
+        padding:2vh 0 2vh 0;
+    }
+    
+    .link-container > .brand > p > a, a:visited {
+        font-size: 2rem;
+        margin: 0 2vw 0 2vw;
     }
 }
