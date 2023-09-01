@@ -89,8 +89,9 @@ footer{
     padding: 15px;
     display: grid;
     column-gap: 15px;
-    row-gap: 5px;
-    grid-template-columns: min-content auto min-content;
+    row-gap: 8px;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content 1fr;
 }
 .member-card img {
     width: 140px;
