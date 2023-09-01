@@ -73,21 +73,24 @@ footer{
 }
 .member-card-wrapper {
     border-radius: 30px;
+    overflow: hidden;
     background-color: #dddddd;
     margin-top: 20px;
     display: grid;
+    grid-auto-flow: column;
     grid-template-columns: auto min-content;
 }
 .member-card {
     background: #6DD5FA;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #6DD5FA, #efe6fc);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #6DD5FA, #efe6fc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 30px;
     padding: 15px;
     display: grid;
-    gap: 15px;
-    grid-template-columns: max-content auto;
+    column-gap: 15px;
+    row-gap: 5px;
+    grid-template-columns: min-content auto min-content;
 }
 .member-card img {
     width: 140px;
@@ -96,20 +99,34 @@ footer{
     /* height: 100%; */
     object-fit: cover;
     background-color: #D2D2D2;
+    grid-column: 1;
+    grid-row: 1 / span 2;
 }
-.card-info .title .rolle{
-    display: inline;
+.title {
+    grid-column: 2;
+    grid-row: 1;
+}
+.text {
+    grid-column: 2;
+    grid-row: 2;
 }
 
 /* === Card-Links === */
 .links {
+    display: inline-flex;
+    flex-direction: column;
     font-size: 2rem;
+    gap: 15px;
+}
+.links.link-big {
     padding: 15px;
+}
+.links.mobile {
+    display: none;
 }
 .links a {
     display: inline-flex;
     flex-direction: column;
-    margin-bottom: 1rem;
 }
 .links a i {
     width: 2rem;
@@ -120,4 +137,36 @@ footer{
 a, a:visited > i {
     color:#000;
     text-decoration: none;
+}
+
+/* === === */
+@media (max-width: 600px) {
+    .member-card {
+        row-gap: 15px;
+        grid-template-columns: min-content auto;
+    }
+    .member-card img {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
+    .title {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .text {
+        grid-column: 1 / span 2;
+        grid-row: 3;
+    }
+    .links {
+        flex-direction: row;
+        margin: auto 0 ;
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .links.mobile {
+        display: block;
+    }
+    .links.link-big {
+        display: none;
+    }
 }
