@@ -125,14 +125,19 @@ footer{
 .links.mobile {
     display: none;
 }
-
-.links a i {
-    width: 2.4rem;
-    margin-right: 10px;
+.links a {
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    display: flex;
 }
 .links a:hover > i {    
     transform: scale(1.2, 1.2);
+    background: -moz-linear-gradient (circle at 33% 100%, #CF77F3 0%, #009BFF 47%, #2AC9DB 50%);
+    background: -webkit-linear-gradient (circle at 33% 100%, #CF77F3 0%, #009BFF 47%, #2AC9DB 50%);
     background: radial-gradient(circle at 33% 100%, #CF77F3 0%, #009BFF 47%, #2AC9DB 50%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
