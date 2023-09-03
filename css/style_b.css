@@ -171,7 +171,7 @@ a, a:visited > i {
         grid-row: 2;
     }
     .links.mobile {
-        display: block;
+        display: flex;
     }
     .links.link-big {
         display: none;
