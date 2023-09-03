@@ -146,7 +146,25 @@ a, a:visited > i {
     text-decoration: none;
 }
 
-/* === === */
+
+/* === For fun === */
+#DuckContainer {
+    position: relative;
+}
+img#DuckImg {
+    position: absolute;
+    image-rendering: pixelated;
+    left: -95px;
+    top: -100px;
+    width: 80px;
+    transition: transform ease-out .3s .5s;
+}
+.links a#DuckLink:hover > #DuckContainer img#DuckImg {
+    transform: translate(70%,10%) rotate(70deg);
+    transition-delay: 2s;
+}
+
+/* === Mobile view === */
 @media (max-width: 600px) {
     .member-card {
         row-gap: 15px;
