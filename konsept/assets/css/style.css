@@ -1,0 +1,71 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color:#FFF;
+    overflow-y: scroll;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Rubik Mono One', monospace;
+}
+
+.smalltext {
+    font-size: 0.7rem;
+}
+
+.accordion-item, .accordion-button  {
+    border-radius: 0 !important;
+    border: 0 !important
+  }
+
+.navbar > a {
+    font-family: 'Rubik Mono One', monospace;
+    font-size: 2vh;
+}
+
+.monofont {
+    font-family: 'Rubik Mono One', monospace;
+}
+
+.rounded-edges {
+    border-radius: 5px;
+}
+
+.navbar > a:hover {
+    color:#aaa;
+    transition: 0.5s;
+}
+
+
+.active {
+    border-bottom: #FFF 2px solid;
+}
+
+.navbar > .active:hover {
+    border-bottom: #aaa 2px solid;
+    font-size: 2vh;
+}
+
+.brand {
+    transition: all 0.4s ease-in-out;
+}
+
+.brand:hover {
+    transform: scale(1.5);
+}
+
+.brand > p {
+    margin: auto;
+}
+
+.brand > p > a, a:visited {
+    color:#FFF;
+    font-size:1.5rem;
+    margin: 0 0.3vw 0 0.3vw;
+    transition: all 0.2s ease-in-out;
+}
+
+.brand > p > a:hover {
+    color:#aaa;
+}
