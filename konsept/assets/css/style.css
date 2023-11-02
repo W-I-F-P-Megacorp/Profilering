@@ -1,5 +1,4 @@
 body {
-    font-family: 'Open Sans', sans-serif;
     color:#FFF;
     overflow-y: scroll;
     font-family: 'Rubik', sans-serif;
@@ -68,4 +67,25 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .brand > p > a:hover {
     color:#aaa;
+}
+
+/* === For fun === */
+#glenn_img {
+    position: relative;
+    z-index: 1;
+}
+#DuckContainer {
+    position: relative;
+}
+img#DuckImg {
+    position: absolute;
+    image-rendering: pixelated;
+    left: 25px;
+    top: -100px;
+    width: 80px;
+    transition: transform ease-out .3s .5s;
+}
+#egg-box:hover > #DuckContainer img#DuckImg {
+    transform: translate(75%,10%) rotate(70deg);
+    transition-delay: 2s;
 }

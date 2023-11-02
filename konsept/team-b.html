@@ -137,7 +137,12 @@
                 <div class="col-md-10 bg-body-tertiary px-3">
                     <div class="row mt-3 mb-3">
                         <div class="col-md-2">
-                            <img src="assets/img/glenn.jpg" class="img-fluid mb-2" alt="Bilde av Glenn">
+                            <div class="mb-2" id="egg-box">
+                                <img src="assets/img/glenn.jpg" class="img-fluid" id="glenn_img" alt="Bilde av Glenn">
+                                <div id="DuckContainer">
+                                    <img id="DuckImg" src="../favicons/favicon_duck.ico" alt="En pixelert and">
+                                </div>
+                            </div>
                             <div class="d-flex justify-content-center">
                                 <div class="brand">
                                     <p><a href="https://github.com/GlennJoakimB" target="_blank"><i class="fa-brands fa-github"></i></a></p>
@@ -148,12 +153,13 @@
                             </div>
                         </div>
                         <div class="col-md-10">
-                            <h2>Glenn Joakim Bakklund (??)</h2>
+                            <h2>Glenn Joakim Bakklund (22)</h2>
                             <p>Nestleder, utvikler</p>
                             <hr>
                             <p>
-                                Jeg er en positiv og munter student som går IT, med fritidsinteresser innen dataspill, musikk, og tegning. Jeg har gode ferdigheter innen koding og design, og står på for å få ting gjort innen arbeidsfrister.
-                                Jeg har mye fokus på å gjøre ting ordentlig så langt det lar seg gjøre, og liker å lære nye ting jeg finner spennende. Jeg kan være spontan om jeg bare får tenkt meg om.
+                                Jeg er munter og utadvent, har gode ferdigheter innen frontend og backend utvikling, og liker å lære nye ting. Jeg står på for å få ting gjort innen arbeidsfrister, og har mye fokus på å gjennomføre oppgaver og arbeid på en god og ordentlig måte. 
+                                <br>
+                                Jeg liker å lage ting, utfordre meg selv, og har stor interesse for dataspill, musikk, og tegning på fritiden.
                             </p>
                             <div class="accordion" id="accordionGlenn">
                                 <div class="accordion-item">
@@ -165,49 +171,70 @@
                                     <div id="collapseGlenn" class="accordion-collapse collapse" data-bs-parent="#accordionGlenn">
                                         <div class="accordion-body">
                                             <div class="row">
-                                                <div class="col-md-12">
-                                                    <p>Oversikt over ferdigheter kommer senere.</p>
-                                                </div>
-                                                <!--<div class="col-md-6">
+                                                <div class="col-md-6">
                                                     <div class="mb-4">
-                                                        En ferdighet
-                                                        <div class="progress" role="progressbar" aria-label="Ferdighetsnivå" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                        God stemning
+                                                        <div class="progress" role="progressbar" aria-label="Ferdighetsnivå" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                                                             <div class="progress-bar" style="width: 100%"></div>
                                                         </div>
                                                     </div>
                                                     <div class="mb-4">
-                                                        Ferdighet
-                                                        <div class="progress" role="progressbar" aria-label="Ferdighetsnivå" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                            <div class="progress-bar" style="width: 60%"></div>
+                                                        C#
+                                                        <div class="progress" role="progressbar" aria-label="Ferdighetsnivå" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar" style="width: 75%"></div>
                                                         </div>
                                                     </div>
                                                     <div class="mb-4">
-                                                        Ferdighet
-                                                        <div class="progress" role="progressbar" aria-label="Ferdighetsnivå" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                            <div class="progress-bar" style="width: 50%"></div>
+                                                        Java
+                                                        <div class="progress" role="progressbar" aria-label="Ferdighetsnivå" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar" style="width: 75%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-4">
+                                                        HTML & CSS
+                                                        <div class="progress" role="progressbar" aria-label="Ferdighetsnivå" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar" style="width: 75%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-4">
+                                                        Ledelse 
+                                                        <div class="progress" role="progressbar" aria-label="Ferdighetsnivå" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar" style="width: 65%"></div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="mb-4">
-                                                        Ferdighet
-                                                        <div class="progress" role="progressbar" aria-label="Ferdighetsnivå" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                            <div class="progress-bar" style="width: 30%"></div>
+                                                        PHP
+                                                        <div class="progress" role="progressbar" aria-label="Ferdighetsnivå" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar" style="width: 65%"></div>
                                                         </div>
                                                     </div>
                                                     <div class="mb-4">
-                                                        Ferdighet
-                                                        <div class="progress" role="progressbar" aria-label="Ferdighetsnivå" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                            <div class="progress-bar" style="width: 30%"></div>
+                                                        Relasjonelle databaser
+                                                        <div class="progress" role="progressbar" aria-label="Ferdighetsnivå" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar" style="width: 60%"></div>
                                                         </div>
                                                     </div>
                                                     <div class="mb-4">
-                                                        Ferdighet#
-                                                        <div class="progress" role="progressbar" aria-label="Ferdighetsnivå" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                            <div class="progress-bar" style="width: 25%"></div>
+                                                        C++
+                                                        <div class="progress" role="progressbar" aria-label="Ferdighetsnivå" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar" style="width: 60%"></div>
                                                         </div>
                                                     </div>
-                                                </div>-->
+                                                    <div class="mb-4">
+                                                        Figma
+                                                        <div class="progress" role="progressbar" aria-label="Ferdighetsnivå" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar" style="width: 40%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-4">
+                                                        JavaScript
+                                                        <div class="progress" role="progressbar" aria-label="Ferdighetsnivå" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar" style="width: 35%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -356,7 +383,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="mb-4">
-                                                        CSS
+                                                        HTML & CSS
                                                         <div class="progress" role="progressbar" aria-label="Ferdighetsnivå" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
                                                             <div class="progress-bar" style="width: 60%"></div>
                                                         </div>
