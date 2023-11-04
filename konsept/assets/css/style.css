@@ -1,3 +1,6 @@
+/*
+    Standard HTML changes
+*/
 body {
     color:#FFF;
     overflow-y: scroll;
@@ -9,26 +12,17 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: 'Rubik Mono One', monospace;
 }
 
-.smalltext {
-    font-size: 0.7rem;
-}
 
-.accordion-item, .accordion-button  {
-    border-radius: 0 !important;
-    border: 0 !important
-  }
 
+
+
+/*
+    Bootstrap changes
+*/
+/* Navbar */
 .navbar > a {
     font-family: 'Rubik Mono One', monospace;
-    font-size: 2vh;
-}
-
-.monofont {
-    font-family: 'Rubik Mono One', monospace;
-}
-
-.rounded-edges {
-    border-radius: 5px;
+    font-size: 1.3rem;
 }
 
 .navbar > a:hover {
@@ -36,16 +30,28 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     transition: 0.5s;
 }
 
-
 .active {
     border-bottom: #FFF 2px solid;
 }
 
 .navbar > .active:hover {
     border-bottom: #aaa 2px solid;
-    font-size: 2vh;
 }
 
+/* Other */
+.accordion-item, .accordion-button  {
+    border-radius: 0 !important;
+    border: 0 !important
+}
+
+
+
+
+
+/*
+    Custom CSS
+*/
+/* Brand logos on profile */
 .brand {
     transition: all 0.4s ease-in-out;
 }
@@ -65,11 +71,30 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     transition: all 0.2s ease-in-out;
 }
 
+/* Other */
 .brand > p > a:hover {
     color:#aaa;
 }
 
-/* === For fun === */
+.smalltext {
+    font-size: 0.7rem;
+}
+
+.rounded-edges {
+    border-radius: 5px;
+}
+
+.monofont {
+    font-family: 'Rubik Mono One', monospace;
+}
+
+
+
+
+
+/*
+    Glenn things
+*/
 #glenn_img {
     position: relative;
     z-index: 1;
