@@ -1,15 +1,36 @@
 /*
-    Standard HTML changes
+    Global Variables
+*/
+:root {
+    /* Custom Variables*/
+    --font-header: 'Rubik Mono One', monospace;
+    --font-text: 'Rubik', sans-serif;
+    --font-text-weight: 300;
+    --navbar-border-bottom: #FFF 2px solid;
+    --text-color: #FFF;
+    --link-color: #FFF;
+    --link-color-hover: #AAA;
+
+    /* Override Bootstrap Variables */
+    /*--bs-border-radius: 1.375rem; <-- Remove comment & use --bs-border-radius to change radius of all things rounded, both bootstrap and our own */
+}
+
+
+
+
+
+/*
+    Standard HTML tag changes
 */
 body {
-    color:#FFF;
+    color:var(--text-color);
     overflow-y: scroll;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 300;
+    font-family: var(--font-text);
+    font-weight: var(--font-text-weight);
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: 'Rubik Mono One', monospace;
+    font-family: var(--font-header);
 }
 
 
@@ -21,21 +42,21 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 */
 /* Navbar */
 .navbar > a {
-    font-family: 'Rubik Mono One', monospace;
+    font-family: var(--font-header);
     font-size: 1.3rem;
 }
 
 .navbar > a:hover {
-    color:#aaa;
+    color:var(--link-color-hover);
     transition: 0.5s;
 }
 
 .active {
-    border-bottom: #FFF 2px solid;
+    border-bottom: var(--navbar-border-bottom);
 }
 
 .navbar > .active:hover {
-    border-bottom: #aaa 2px solid;
+    border-bottom: var(--navbar-border-bottom);
 }
 
 /* Other */
@@ -65,27 +86,27 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .brand > p > a, a:visited {
-    color:#FFF;
+    color: var(--link-color);
     font-size:1.5rem;
     margin: 0 0.3vw 0 0.3vw;
     transition: all 0.2s ease-in-out;
 }
 
-/* Other */
 .brand > p > a:hover {
-    color:#aaa;
+    color: var(--link-color-hover);
 }
 
+/* Other */
 .smalltext {
     font-size: 0.7rem;
 }
 
 .rounded-edges {
-    border-radius: 5px;
+    border-radius: var(--bs-border-radius);
 }
 
 .monofont {
-    font-family: 'Rubik Mono One', monospace;
+    font-family: var(--font-header);
 }
 
 
